@@ -22,9 +22,6 @@ const routes: Routes = [
   {
     path: 'header',
     loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
-  },  {
-    path: 'pago',
-    loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
   },
   {
     path: 'conductores',
