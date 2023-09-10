@@ -24,6 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
   },
   {
+<<<<<<< HEAD
     path: 'conductores',
     loadChildren: () => import('./conductores/conductores.module').then( m => m.ConductoresPageModule)
   },
@@ -36,6 +37,11 @@ const routes: Routes = [
     loadChildren: () => import('./sugerencias/sugerencias.module').then( m => m.SugerenciasPageModule)
   },
 
+=======
+    path: 'recovery',
+    loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
+  },
+>>>>>>> f3ab942aecac3e5e04be5a2d164dd9a7518a94e3
 ];
 
 @NgModule({
