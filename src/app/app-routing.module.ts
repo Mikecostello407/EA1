@@ -27,6 +27,15 @@ const routes: Routes = [
     path: 'recovery',
     loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
   },
+  path: 'sugerencias',
+  loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
+  },
+  path: 'reclamos',
+  loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
+  },
+  path: 'conductores',
+  loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
+  },
 ];
 
 @NgModule({
