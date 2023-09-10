@@ -14,4 +14,27 @@
   </ion-button>
   <ion-button routerLink="/servicios">Volver
   </ion-button>
+  <ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-input label="Usuario " [(ngModel)]="username" placeholder="Escriba su nombre de usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Contraseña" [(ngModel)]="password" type="password" minlength="3" maxlength="8"
+          value="password" placeholder="Ingrese su contraseña"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button expand="full" (click)="login()">Guardar </ion-button>
+
+      </ion-item>
+
+
+    </ion-list>
+  </ion-list>
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>DUOC UC</ion-title>
+  </ion-toolbar>
+</ion-footer>
