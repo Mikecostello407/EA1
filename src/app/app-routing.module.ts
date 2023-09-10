@@ -22,7 +22,23 @@ const routes: Routes = [
   {
     path: 'header',
     loadChildren: () => import('./header/header.module').then( m => m.HeaderPageModule)
+  },  {
+    path: 'pago',
+    loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
   },
+  {
+    path: 'conductores',
+    loadChildren: () => import('./conductores/conductores.module').then( m => m.ConductoresPageModule)
+  },
+  {
+    path: 'reclamos',
+    loadChildren: () => import('./reclamos/reclamos.module').then( m => m.ReclamosPageModule)
+  },
+  {
+    path: 'sugerencias',
+    loadChildren: () => import('./sugerencias/sugerencias.module').then( m => m.SugerenciasPageModule)
+  },
+
 ];
 
 @NgModule({
