@@ -27,14 +27,17 @@ const routes: Routes = [
     path: 'recovery',
     loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
   },
-  path: 'sugerencias',
-  loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
+  {
+    path: 'sugerencias',
+    loadChildren: () => import('./sugerencias/sugerencias.module').then( m => m.SugerenciasPageModule)
   },
-  path: 'reclamos',
-  loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
+  {
+    path: 'reclamos',
+    loadChildren: () => import('./reclamos/reclamos.module').then( m => m.ReclamosPageModule)
   },
-  path: 'conductores',
-  loadChildren: () => import('./recovery/recovery.module').then( m => m.RecoveryPageModule)
+  {
+    path: 'conductores',
+    loadChildren: () => import('./conductores/conductores.module').then( m => m.ConductoresPageModule)
   },
 ];
 

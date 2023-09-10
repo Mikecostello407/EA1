@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>reclamos</ion-title>
+    <ion-title>TeLlevoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,15 +17,15 @@
   <ion-list>
     <ion-list>
       <ion-item>
-        <ion-input label="Usuario " [(ngModel)]="username" placeholder="Escriba su nombre de usuario"></ion-input>
+        <ion-input label="Usuario = " [(ngModel)]="username" placeholder="Ingrese su usuario"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-input label="Contraseña" [(ngModel)]="password" type="password" minlength="3" maxlength="8"
-          value="password" placeholder="Ingrese su contraseña"></ion-input>
+        <ion-input label="Reclamos = " [(ngModel)]="password" minlength="3" maxlength="150"
+          value="password" placeholder="Aquí su reclamo"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-button expand="full" (click)="login()">Guardar </ion-button>
+        <ion-button expand="full" (click)="login()">Enviar </ion-button>
 
       </ion-item>
 
