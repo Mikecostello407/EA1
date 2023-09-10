@@ -26,7 +26,7 @@ export class ReclamosPage implements OnInit {
 
       this.router.navigate(['/home']);
     } else {
-      console.log('Por favor, completa todos los campos.');
+      console.log('Por favor, completa todos los campos');
     }
   }
 }
